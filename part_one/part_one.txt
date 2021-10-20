@@ -1,0 +1,32 @@
+Part 1 - CSV validation:
+========================
+
+Given a filename, write a function that will open this file, validate the data and output only the "Good Data" to a new file (good_data.csv).
+
+Requirements:
+* The file is in CSV format.
+* The column names are id, first_name, last_name, email, eircode, bad_column.
+* "Good Data" definition:
+    * A row of data must pass ALL of the validation below to be considered "Good Data".
+    * Required fields (these must not be empty): id, email, eircode
+
+    * Column validation:
+        - id
+            - integer
+        - first_name:
+            - string
+        - last_name:
+            - string
+        - email:
+            - string
+            - must contain "@" symbol
+        - eircode
+            - string
+            - 7 characters long
+            - contains alphanumeric characters only
+        - bad_column:
+            - ignore this column
+
+    * example of a "Good Data" row
+        id	first_name	last_name	email	                eircode
+        8	Ring	    Symson	    rsymson7@multiply.com	D02DD51

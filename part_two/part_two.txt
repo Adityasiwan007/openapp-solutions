@@ -1,0 +1,20 @@
+Part 2 - algorithm:
+===================
+
+* Given an array of integers (eg. [1, 2, 3]), write a function that returns the amount of "GOOD" pairs in the array.
+
+* "GOOD" pair definition:
+    - A pair (a, b) is called "GOOD" if arr[a] == arr[b] and a < b
+
+    - Example of a good pair:
+        arr = [1, 2, 1, 4]
+        arr[0] == arr[2] and 0 < 2 ... therefore (0, 2) is a GOOD pair - zero indexing
+
+* Examples:
+    Input: arr = [1, 2, 1, 4]
+    Output: 2
+
+    Input: arr = [1, 2, 3]
+    Output: 0
+
+* See part_two.py for starter code
